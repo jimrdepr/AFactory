@@ -6,8 +6,8 @@ namespace Abs_Factory
 {
     class PhoneTypeChecker
     {
-        IPhoneFactory factory;
-        Manufacturers manu;
+        public IPhoneFactory factory;
+        public Manufacturers manu;
 
         public PhoneTypeChecker(Manufacturers m)
         {
@@ -25,8 +25,6 @@ namespace Abs_Factory
 
         public void CheckProducts()
         {
-            string smart = factory.GetSmart();
-
             Console.WriteLine("Smart Phone: " + factory.GetSmart());
             Console.WriteLine("Dumb Phone: " + factory.GetDumb());
         }
