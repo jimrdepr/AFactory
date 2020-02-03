@@ -25,8 +25,9 @@ namespace Abs_Factory
 
         public void CheckProducts()
         {
-            Console.WriteLine("Smart Phone: " + factory.GetSmart());
-            Console.WriteLine("Dumb Phone: " + factory.GetDumb());
+            Console.WriteLine(manu);
+            Console.WriteLine("Smart Phone: " + factory.GetSmart().GetName());
+            Console.WriteLine("Dumb Phone: " + factory.GetDumb().GetName());
         }
         public enum Manufacturers
         {
